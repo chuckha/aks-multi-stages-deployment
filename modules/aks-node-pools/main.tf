@@ -38,11 +38,11 @@ resource "azurerm_kubernetes_cluster_node_pool" "modpool" {
   lifecycle {
     precondition {
       condition     = (var.worker_os_type == "Linux") ? contains(["Ubuntu", "CBLMariner", "Mariner"], var.worker_os_sku) : contains(["Windows2019", "Windows2022"])
-      error_message = "Must use a Linux OS when worker_os_type is set to Linux"
+      error_message = "Must use a Linux OS when worker_os_type is set to Linux."
     }
     precondition {
       condition     = var.worker_pool_min_count <= var.worker_pool_max_count
-      error_message = "Min count must be less than or equal to the max node count"
+      error_message = "Min count must be less than or equal to the max node count."
     }
   }
 }

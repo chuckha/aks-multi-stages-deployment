@@ -106,7 +106,7 @@ variable "worker_pool_node_priority" {
   type        = string
   validation {
     condition = contains(["Regular", "Spot"], var.worker_pool_node_priority)
-    error_message = "Accepted values are 'Spot' or 'Regular'"
+    error_message = "Accepted values are 'Spot' or 'Regular'."
   }
 }
 
@@ -144,7 +144,7 @@ variable "worker_os_sku" {
   type        = string
   validation {
     condition = contains(["Ubuntu", "CBLMariner", "Mariner", "Windows2019", "Windows2022"], var.worker_os_sku)
-    error_message = "Accepted values are Ubuntu, CBLMariner, Mariner"
+    error_message = "Accepted values are Ubuntu, CBLMariner, Mariner."
   }
 }
 

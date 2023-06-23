@@ -18,7 +18,7 @@ variable "fw_policy_sku" {
   type        = string
   validation {
     condition = contains(["Basic", "Standard", "Premium"], var.fw_policy_sku)
-    error_message = "Accepted values are 'Basic', 'Standard' or 'Premium'"
+    error_message = "Accepted values are 'Basic', 'Standard' or 'Premium'."
   }
 }
 
