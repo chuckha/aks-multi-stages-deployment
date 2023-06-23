@@ -61,7 +61,7 @@ variable "fw_sku" {
   default = "Standard"
   validation {
     condition = contains(["Basic", "Standard", "Premium"], var.fw_sku)
-    error_message = "Accepted values are 'Basic', 'Standard', 'Premium'"
+    error_message = "Accepted values are 'Basic', 'Standard', 'Premium'."
   }
 }
 
@@ -69,7 +69,7 @@ variable "fw_policy_sku" {
   default = "Standard"
   validation {
     condition = contains(["Basic", "Standard", "Premium"], var.fw_policy_sku)
-    error_message = "Accepted values are 'Basic', 'Standard', 'Premium'"
+    error_message = "Accepted values are 'Basic', 'Standard', 'Premium'."
   }
 }
 
